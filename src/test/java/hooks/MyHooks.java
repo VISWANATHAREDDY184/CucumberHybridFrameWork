@@ -18,6 +18,7 @@ public class MyHooks {
 
 	@Before
 	public void setup() {
+		System.out.println("url is launched");
 		Properties prop1=new ConfigReader().intializeProperties();
 		Properties prop = new ConfigReader().intializeProperties();
 		driver = DriverFactory.initializeBrowser(prop.getProperty("browser"));
