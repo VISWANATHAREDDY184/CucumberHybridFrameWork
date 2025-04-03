@@ -3,9 +3,8 @@ Feature: Registration functionality
 Scenario: User creates an account only with mandatory fields
 Given User navigates to Register Account page
 When User enters the details into below fields
-|firstName	|Viswanath									|
-|lastName		|Reddy											|
-|email			|amotooricap4@gmail.com			|
+|firstName	|Arun												|
+|lastName		|Motoori										|
 |telephone	|1234567890									|
 |password		|12345											|
 And User selects Privacy Policy
@@ -15,9 +14,8 @@ Then User account should get created successfully
 Scenario: User creates an account with all fields
 Given User navigates to Register Account page
 When User enters the details into below fields
-|firstName	|Viswanath									|
-|lastName		|Reddy											|
-|email			|amotooricap4@gmail.com			|
+|firstName	|Arun												|
+|lastName		|Motoori										|
 |telephone	|1234567890									|
 |password		|12345											|
 And User selects Yes for Newsletter
@@ -28,8 +26,8 @@ Then User account should get created successfully
 Scenario: User creates a duplicate account
 Given User navigates to Register Account page
 When User enters the details into below fields with duplicate email
-|firstName	|Viswanath									|
-|lastName		|Reddy											|
+|firstName	|Arun												|
+|lastName		|Motoori										|
 |email			|amotooricap4@gmail.com			|
 |telephone	|1234567890									|
 |password		|12345											|

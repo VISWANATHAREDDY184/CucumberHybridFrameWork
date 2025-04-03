@@ -1,10 +1,5 @@
 Feature: Login functionality
 
-Background: 
-
-
-
-
 Scenario Outline: Login with valid credentials
 Given User navigates to login page
 When User enters valid email address <username> into email field
@@ -13,9 +8,9 @@ And User clicks on Login button
 Then User should get successfully logged in
 Examples:
 |username								|password	|
-|viswanath123@gmail.com	|12345		|
-|viswanath456@gmail.com	|12345		|
-|viswanath457@gmail.com	|12345		|
+|amotooricap1@gmail.com	|12345		|
+|amotooricap2@gmail.com	|12345		|
+|amotooricap3@gmail.com	|12345		|
 
 Scenario: Login with invalid credentials
 Given User navigates to login page
